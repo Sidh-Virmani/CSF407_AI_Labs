@@ -1,0 +1,5 @@
+Implement the warehouse logical planning problem from the attached lab sheet in Python.
+Represent states as sets of propositions and actions using positive/negative preconditions and positive/negative effects.
+Use Breadth-First Search (BFS) to find a valid sequence of actions that reaches the specified goal and report when no plan exists.
+Print the action sequence and the state reached after every action, and include Tests A, B, and C described in the lab.
+Add detailed comments explaining what every important function and section of the code is doing.
