@@ -1,0 +1,12 @@
+PROMPT 1 - Binary XOR implementation
+
+Generate minimal PyTorch code for the following exact experiment. Use the four XOR examples
+(0,0)->0, (0,1)->1, (1,0)->1, (1,1)->0. Use a 2-input -> 2-hidden-unit -> 1-output network, tanh as the hidden activation, and one output logit trained with BCEWithLogitsLoss. Use PyTorch's random initialisation, set a fixed random seed, train full-batch on CPU for a few thousand lightweight steps with a gradient-based optimiser, and do not change the architecture or task. Report the initial and final loss, all four sigmoid probabilities, thresholded labels, and the first-layer weight gradient immediately after backward(). Keep the code concise and commented.
+
+PROMPT 2 - Required diagnostics
+
+Using the same XOR architecture and dataset, add the lab diagnostics without changing the scientific task. First, run a symmetry experiment in which all trainable parameters are initialised to zero and print the two rows of the first hidden-layer weight matrix at several training steps so we can check whether they remain identical. Second, repeat the randomly initialised experiment with sigmoid, tanh, and ReLU hidden activations, changing only the activation, and report for each run the final loss, whether all four labels are correct, and the Euclidean norm of the first-layer gradient after the first backward pass.
+
+PROMPT 3 - Three-class extension
+
+Modify only the output/loss portion of the small neural model for a three-class version of the same sensor task: class 0 for (0,0), class 1 for (0,1) and (1,0), and class 2 for (1,1). Keep the 2-unit tanh hidden layer, replace the single output with three logits, and use CrossEntropyLoss. Train on the four examples, then report the output weight-matrix shape, all four softmax probability vectors and predicted classes. For one example, print the sum of the softmax probabilities to verify that it is approximately 1.
