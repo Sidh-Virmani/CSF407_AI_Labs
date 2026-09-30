@@ -1,0 +1,61 @@
+SECOND-ORDER EXAMPLE CONDITIONAL PROBABILITY TABLES
+P(next | ('<START>', '<START>')) = {'the': 1.0}
+P(next | ('<START>', 'the')) = {'cat': 0.5, 'dog': 0.5}
+P(next | ('the', 'cat')) = {'sat': 0.6666666666666666, 'ran': 0.3333333333333333}
+P(next | ('the', 'dog')) = {'sat': 0.6666666666666666, 'ran': 0.3333333333333333}
+P(next | ('cat', 'sat')) = {'on': 1.0}
+P(next | ('dog', 'ran')) = {'to': 1.0}
+
+NORMALISATION TEST
+('<START>', '<START>'): total=1.000000 PASS
+('<START>', 'the'): total=1.000000 PASS
+('the', 'cat'): total=1.000000 PASS
+('cat', 'sat'): total=1.000000 PASS
+('sat', 'on'): total=1.000000 PASS
+('on', 'the'): total=1.000000 PASS
+('the', 'mat'): total=1.000000 PASS
+('the', 'rug'): total=1.000000 PASS
+('the', 'dog'): total=1.000000 PASS
+('dog', 'sat'): total=1.000000 PASS
+('dog', 'ran'): total=1.000000 PASS
+('ran', 'to'): total=1.000000 PASS
+('to', 'the'): total=1.000000 PASS
+('the', 'park'): total=1.000000 PASS
+('cat', 'ran'): total=1.000000 PASS
+Overall: PASS
+
+20 SAMPLED SENTENCES
+01. the cat sat on the rug
+02. the cat sat on the mat
+03. the dog sat on the mat
+04. the cat sat on the mat
+05. the dog ran to the park
+06. the dog sat on the rug
+07. the cat sat on the mat
+08. the cat sat on the rug
+09. the dog sat on the rug
+10. the dog ran to the park
+11. the dog ran to the park
+12. the cat sat on the rug
+13. the cat ran to the park
+14. the dog sat on the rug
+15. the dog sat on the rug
+16. the cat sat on the rug
+17. the cat ran to the park
+18. the dog sat on the mat
+19. the dog ran to the park
+20. the cat sat on the rug
+
+5 GREEDY SENTENCES
+01. the cat sat on the mat
+02. the cat sat on the mat
+03. the cat sat on the mat
+04. the cat sat on the mat
+05. the cat sat on the mat
+
+5 SAMPLED SENTENCES
+01. the dog sat on the mat
+02. the cat sat on the mat
+03. the cat sat on the mat
+04. the cat ran to the park
+05. the cat ran to the park

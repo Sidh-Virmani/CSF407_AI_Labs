@@ -1,0 +1,22 @@
+MODEL COMPARISON
+----------------
+First-order distinct parameters:  17
+Second-order distinct parameters: 19
+First-order zero-probability contexts:  1
+Second-order zero-probability contexts: 129
+First-order generation diversity:  30/100 unique samples
+Second-order generation diversity: 6/100 unique samples
+
+QUALITATIVE EXAMPLES
+First-order:
+ - the rug
+ - the mat
+ - the park
+ - the rug
+ - the cat sat on the dog sat on the cat sat on the cat sat on the park
+Second-order:
+ - the cat ran to the park
+ - the dog sat on the mat
+ - the cat ran to the park
+ - the dog ran to the park
+ - the dog sat on the mat

@@ -1,0 +1,65 @@
+FIRST-ORDER CONDITIONAL PROBABILITY TABLES
+P(next | the) = {'cat': 0.25, 'mat': 0.16666666666666666, 'rug': 0.16666666666666666, 'dog': 0.25, 'park': 0.16666666666666666}
+Most probable next token: cat
+
+P(next | cat) = {'sat': 0.6666666666666666, 'ran': 0.3333333333333333}
+Most probable next token: sat
+
+P(next | dog) = {'sat': 0.6666666666666666, 'ran': 0.3333333333333333}
+Most probable next token: sat
+
+P(next | sat) = {'on': 1.0}
+Most probable next token: on
+
+P(next | ran) = {'to': 1.0}
+Most probable next token: to
+
+NORMALISATION TEST
+ <START>: total=1.000000 PASS
+     the: total=1.000000 PASS
+     cat: total=1.000000 PASS
+     sat: total=1.000000 PASS
+      on: total=1.000000 PASS
+     mat: total=1.000000 PASS
+     rug: total=1.000000 PASS
+     dog: total=1.000000 PASS
+     ran: total=1.000000 PASS
+      to: total=1.000000 PASS
+    park: total=1.000000 PASS
+Overall: PASS
+
+20 SAMPLED SENTENCES
+01. the cat sat on the dog ran to the cat sat on the cat sat on the dog ran to the dog sat on the mat
+02. the park
+03. the dog sat on the rug
+04. the park
+05. the cat sat on the cat sat on the mat
+06. the mat
+07. the dog sat on the mat
+08. the rug
+09. the dog sat on the mat
+10. the park
+11. the mat
+12. the mat
+13. the mat
+14. the mat
+15. the rug
+16. the cat sat on the cat sat on the park
+17. the dog ran to the dog sat on the park
+18. the rug
+19. the park
+20. the dog sat on the dog sat on the cat ran to the mat
+
+5 GREEDY SENTENCES
+01. the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat
+02. the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat
+03. the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat
+04. the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat
+05. the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on the cat
+
+5 SAMPLED SENTENCES
+01. the park
+02. the cat ran to the rug
+03. the park
+04. the rug
+05. the mat
