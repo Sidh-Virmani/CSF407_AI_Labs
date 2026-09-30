@@ -1,0 +1,19 @@
+Goal-based warehouse agent
+--------------------------
+Start: (1, 1)
+Goal : (1, 19)
+Path length: 20
+States expanded: 58
+Actions: Right -> Right -> Right -> Down -> Right -> Right -> Right -> Up -> Right -> Right -> Right -> Right -> Right -> Right -> Right -> Right -> Right -> Right -> Right -> Right
+
+Path on warehouse:
+#####################
+#S***.#************G#
+#.##****##########..#
+#....##.............#
+#.######.###.#.###..#
+#........#..........#
+#####################
+
+Validation: PASS
+Blocked-grid test: PASS
